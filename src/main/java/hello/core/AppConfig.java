@@ -8,6 +8,7 @@ import hello.core.order.OrderService;
 import hello.core.order.OrderServiceImpl;
 
 public class AppConfig {
+    // 중복이 있고, 역할에 따른 구현이 잘 안보이는 형태.
     public MemberService memberService(){
         return new MemberServiceImpl(new MemoryMemberRepository());
     }
