@@ -18,6 +18,7 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
 //    생성자가 하나일 때는 생략가능
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+//        생성자 주입을 쓸 때 하위의 코드를 누락해도 테스트 과정에서 확인할 수 있다.
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
     }
